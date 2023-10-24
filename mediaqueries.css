@@ -193,7 +193,7 @@
     font-size: 2rem;
   }
   .text-container {
-    text-align: justify;
+    word-spacing: normal;
   }
   .contact-info-upper-container {
     flex-direction: column;
