@@ -231,6 +231,45 @@
   }
 }
 
+@media screen and (max-width: 682px) {
+  .article-container {
+    gap: 0.7rem;
+  }
+  article {
+    width: 8rem;
+    gap: 0.7rem;
+  }
+  article h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 513px) {
+  .article-container {
+    gap: 0.6rem;
+  }
+  article {
+    width: 7rem;
+    gap: 0.6rem;
+  }
+  article h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .article-container {
+    gap: 0.5rem;
+  }
+  article {
+    width: 6rem;
+    gap: 0.5rem;
+  }
+  article h3 {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 400px) {
   #contact {
     height: 20%rem;
