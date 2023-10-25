@@ -199,10 +199,11 @@
   .contact-info-upper-container {
     flex-direction: column;
     align-items: start;
-    padding: 1rem;
+    padding: 0.5rem;
     width: fit-content;
     align-self: center;
     margin: 1rem;
+    font-size: smaller;
   }
   .contact-div {
     height: auto;
