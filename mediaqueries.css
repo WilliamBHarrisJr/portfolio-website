@@ -193,6 +193,7 @@
     font-size: 2rem;
   }
   .text-container {
+    text-align: unset;
     word-spacing: normal;
   }
   .contact-info-upper-container {
