@@ -137,7 +137,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   footer nav {
     height: fit-content;
@@ -210,7 +210,8 @@
     margin: 2rem;
   }
   #contact {
-    height: 40vh;
+    position: static;
+    height: 70%;
   }
 
   .nav-links-container {
@@ -227,5 +228,30 @@
   }
   .about-details-container {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #contact {
+    height: 20%rem;
+  }
+  footer {
+    height: 18rem;
+    gap: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .contact-info-upper-container {
+    align-content: center;
+  }
+  .contact-info-container p a {
+    font-size: 1rem;
+  }
+  .contact-info-container {
+    flex-direction: column;
+    align-self: center;
+  }
+  .contact-icon {
+    height: 1.7rem;
   }
 }
