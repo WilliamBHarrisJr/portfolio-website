@@ -206,6 +206,7 @@ section {
 #profile-pic-4 {
   opacity: 1;
   transition: opacity 500ms ease-in-out;
+  cursor: pointer;
 }
 
 .section__text {
