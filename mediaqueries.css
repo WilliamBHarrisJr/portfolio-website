@@ -147,12 +147,6 @@
     flex-direction: column;
     align-items: center;
   }
-  #profile-pic-upper-container p {
-    margin-top: 0.2rem;
-    font-size: 1.1rem;
-    font-family: "Yesteryear", cursive;
-    color: lightgray;
-  }
 }
 
 @media screen and (max-width: 690px) {
