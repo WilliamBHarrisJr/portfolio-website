@@ -14,8 +14,8 @@
       <div> <a href="index.html#portfolio" id="back-button"> < Portfolio</a></div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#gallery">Gallery</a></li>
         </ul>
       </div>
@@ -29,10 +29,9 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
-          
         </div>
       </div>
     </nav>
@@ -65,75 +64,6 @@
         src="./assets/arrow-white.png"
         alt=""
         class="icon arrow"
-        onclick="location.href='#about'"
-      />
-      <img
-        src="./assets/arrow-blue.png"
-        alt=""
-        class="icon arrow arrow-hover"
-        onclick="location.href='#about'"
-      />
-    </section>
-    <section id="about" class="about-project">
-      <img
-        src="./assets/arrow-up-white.png"
-        alt=""
-        class="icon arrow-up"
-        onclick="location.href='#top-of-page'"
-      />
-      <img
-        src="./assets/arrow-up-blue.png"
-        alt=""
-        class="icon arrow-up arrow-hover"
-        onclick="location.href='#top-of-page'"
-      />
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About This Project</h1>
-      <div class="section-container">
-        <div class="section__pic-container about-pic-container">
-          <img src="assets/screenshots/Renders/weather-render-2.png" class="about-pic">
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers project-about-containers">
-            <div class="details-container">
-              <div class="article-container">
-                <article>
-                  <div>
-                    <img
-                      src="./assets/python-logo.png"
-                      alt=""
-                      class="icon-medium"
-                    />
-                    <h3>Python</h3>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <img
-                      src="./assets/custom-tkinter-logo.png"
-                      alt=""
-                      class="icon-medium"
-                    />
-                    <h3>Custom Tkinter</h3>
-                  </div>
-                </article>
-              </div>
-          </div>
-          <div class="text-container">
-            <p>
-              This application was built using Python and Custom Tkinter and uses machine learning
-              to make weather predictions. It takes historical weather data in the form of a CSV file 
-              and uses the Pandas library to create a logistical regression model from the data. The 
-              application then takes weather parameters as user input and uses the data model to make a prediction.
-              To help visualize the data, the user can view a histogram, scatter-plot matrix, and a pie chart.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow-white.png"
-        alt=""
-        class="icon arrow"
         onclick="location.href='#features'"
       />
       <img
@@ -148,13 +78,13 @@
         src="./assets/arrow-up-white.png"
         alt=""
         class="icon arrow-up"
-        onclick="location.href='#about'"
+        onclick="location.href='#top-top-of-page'"
       />
       <img
         src="./assets/arrow-up-blue.png"
         alt=""
         class="icon arrow-up arrow-hover"
-        onclick="location.href='#about'"
+        onclick="location.href='#top-of-page'"
       />
       <p class="section__text__p1">Explore It's</p>
       <h1 class="title">Features</h1>
@@ -193,6 +123,76 @@
         src="./assets/arrow-white.png"
         alt=""
         class="icon arrow"
+        onclick="location.href='#about'"
+      />
+      <img
+        src="./assets/arrow-blue.png"
+        alt=""
+        class="icon arrow arrow-hover"
+        onclick="location.href='#about'"
+      />
+    </section>
+    <section id="about" class="about-project">
+      <img
+        src="./assets/arrow-up-white.png"
+        alt=""
+        class="icon arrow-up"
+        onclick="location.href='#features'"
+      />
+      <img
+        src="./assets/arrow-up-blue.png"
+        alt=""
+        class="icon arrow-up arrow-hover"
+        onclick="location.href='#features'"
+      />
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About This Project</h1>
+      <div class="section-container">
+        <div class="section__pic-container about-pic-container">
+          <img src="assets/screenshots/Renders/weather-render-2.png" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers project-about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <article>
+                  <div>
+                    <img
+                      src="./assets/python-logo.png"
+                      alt=""
+                      class="icon-medium"
+                    />
+                    <h3>Python</h3>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <img
+                      src="./assets/custom-tkinter-logo.png"
+                      alt=""
+                      class="icon-medium"
+                    />
+                    <h3>Custom Tkinter</h3>
+                  </div>
+                </article>
+              </div>
+          </div>
+          <div class="text-container">
+            <p class="about-text">
+              This application was built using Python and Custom Tkinter and uses machine learning
+              to make weather predictions. It takes historical weather data in the form of a CSV file 
+              and uses the Pandas library to create a logistical regression model from the data. The 
+              application then takes weather parameters as user input and uses the data model to make a prediction.
+              To help visualize the data, the user can view a histogram, scatter-plot matrix, and a pie chart.
+            </p>
+            <input class="expand-button" type="checkbox">
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-white.png"
+        alt=""
+        class="icon arrow"
         onclick="location.href='#gallery'"
       />
       <img
@@ -207,13 +207,13 @@
         src="./assets/arrow-up-white.png"
         alt=""
         class="icon arrow-up"
-        onclick="location.href='#features'"
+        onclick="location.href='#about'"
       />
       <img
         src="./assets/arrow-up-blue.png"
         alt=""
         class="icon arrow-up arrow-hover"
-        onclick="location.href='#features'"
+        onclick="location.href='#about'"
       />
       <p class="section__text__p1">Browse the</p>
       <h1 class="title">Gallery</h1>
@@ -246,8 +246,8 @@
           <ul class="nav-links">
             <li><a href="index.html#portfolio">< Portfolio</a></li>
             <li><a href="#top-of-page">Top</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
         </div>
       </nav>

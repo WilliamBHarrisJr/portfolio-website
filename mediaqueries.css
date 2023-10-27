@@ -36,6 +36,11 @@
     width: 80%;
     max-width: 80%;
   }
+  .main-about-pic {
+    display: none;
+    height: 1px;
+    width: 1px;
+  }
   #profile {
     position: static;
   }
@@ -67,6 +72,8 @@
   .section__pic-container {
     width: 275px;
     height: 275px;
+  }
+  #profile-pic-upper-container {
     margin: 0 auto 1rem;
   }
   .section__pic-container-relative {
@@ -118,6 +125,26 @@
   }
   #features {
     margin-top: 2rem;
+    align-items: center;
+  }
+
+  .about-text {
+    --max-lines: 3;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+  }
+
+  .expand-button {
+    display: flex;
+    height: auto;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -193,7 +220,6 @@
     font-size: 2rem;
   }
   .text-container {
-    text-align: unset;
     word-spacing: normal;
   }
   .contact-info-upper-container {

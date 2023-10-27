@@ -13,9 +13,9 @@
       <div class="logo">William B Harris Jr</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -29,21 +29,24 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <div class="section__pic-container-relative">
-          <img src="./assets/profile-pic-4.png" alt="Profile" id="profile-pic-4" onclick="toggleImage()" />
-          <img src="./assets/profile-pic-3.png" alt="Profile" id="profile-pic-3" onclick="toggleImage()" />
-          <img src="./assets/profile-pic-2.png" alt="Profile" id="profile-pic-2" onclick="toggleImage()" />
-          <img src="./assets/profile-pic-1.png" alt="Profile" id="profile-pic-1" onclick="toggleImage()" />
+      <div id="profile-pic-upper-container">
+        <div class="section__pic-container">
+          <div class="section__pic-container-relative">
+            <img src="./assets/profile-pic-4.png" alt="Profile" id="profile-pic-4" onclick="toggleImage()" />
+            <img src="./assets/profile-pic-3.png" alt="Profile" id="profile-pic-3" onclick="toggleImage()" />
+            <img src="./assets/profile-pic-2.png" alt="Profile" id="profile-pic-2" onclick="toggleImage()" />
+            <img src="./assets/profile-pic-1.png" alt="Profile" id="profile-pic-1" onclick="toggleImage()" />
+          </div>
         </div>
+        <p>Click Me</p>
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -96,16 +99,16 @@
         src="./assets/arrow-white.png"
         alt=""
         class="icon arrow"
-        onclick="location.href='#about'"
+        onclick="location.href='#portfolio'"
       />
       <img
         src="./assets/arrow-blue.png"
         alt=""
         class="icon arrow arrow-hover"
-        onclick="location.href='#about'"
+        onclick="location.href='#portfolio'"
       />
     </section>
-    <section id="about">
+    <section id="portfolio">
       <img
         src="./assets/arrow-up-white.png"
         alt=""
@@ -118,38 +121,90 @@
         class="icon arrow-up arrow-hover"
         onclick="location.href='#top-of-page'"
       />
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container about-pic-container">
-          <img src="assets/about-pic.png" alt="About" class="about-pic">
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/coder-logo.png" alt="" class="icon-large" />
-              <h3>Independent Software Developer</h3>
-              <h2>
-                2+ Years <br />
-                experience
-              </h2>
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Portfolio</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/trading.png" alt="" class="project-img" onclick="location.href='trading.html'" />
             </div>
-            <div class="details-container">
-              <img src="./assets/WGU-Seal.png" alt="" class="icon-large" />
-              <h3>Western Governors University</h3>
-              <h2>
-                Bachelor of Science <br />
-                Computer Science
-              </h2>
+            <h2 class="skills-sub-title project-title">
+              Automated Trading Application
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='trading.html'"
+              >
+                See More
+              </button>
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='https://github.com/WilliamBHarrisJr/trade-raptor'"
+              >
+                Github
+              </button>
+            </div>
+            <div class="project-text-containers">
+              <h2>C#</h2>
+              <h2>WPF</h2>
             </div>
           </div>
-          <div class="text-container">
-            <p>
-              I'm an independent software developer with over two years of experience with various languages and frameworks. I enjoy both front-end and back-end development and learning new skills and technologies. Check out my skills and portfolio to see if I would be an asset to your team!
-            </p>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/weather.png" alt="" class="project-img" onclick="location.href='weather.html'" />
+            </div>
+            <h2 class="skills-sub-title project-title">
+              Weather Prediction Application
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='weather.html'"
+              >
+                See More
+              </button>
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='https://github.com/WilliamBHarrisJr/weather-prediction-application'"
+              >
+                Github
+              </button>
+            </div>
+            <div class="project-text-containers">
+              <h2>Python</h2>
+              <h2>Custom Tkinter</h2>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/appointment.png" alt="" class="project-img" onclick="location.href='appointment.html'" />
+            </div>
+            <h2 class="skills-sub-title project-title">
+              Appointment Scheduling Application
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='appointment.html'"
+              >
+                See More
+              </button>
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='https://github.com/WilliamBHarrisJr/appointment-scheduling-application'"
+              >
+                Github
+              </button>
+            </div>
+            <div class="project-text-containers">
+              <h2>Java</h2>
+              <h2>JavaFX</h2>
+              <h2>SQL</h2>
+            </div>
           </div>
         </div>
-        
       </div>
       <img
         src="./assets/arrow-white.png"
@@ -169,13 +224,13 @@
         src="./assets/arrow-up-white.png"
         alt=""
         class="icon arrow-up"
-        onclick="location.href='#about'"
+        onclick="location.href='#portfolio'"
       />
       <img
         src="./assets/arrow-up-blue.png"
         alt=""
         class="icon arrow-up arrow-hover"
-        onclick="location.href='#about'"
+        onclick="location.href='#portfolio'"
       />
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
@@ -303,16 +358,16 @@
         src="./assets/arrow-white.png"
         alt=""
         class="icon arrow"
-        onclick="location.href='#portfolio'"
+        onclick="location.href='#about'"
       />
       <img
         src="./assets/arrow-blue.png"
         alt=""
         class="icon arrow arrow-hover"
-        onclick="location.href='#portfolio'"
+        onclick="location.href='#about'"
       />
     </section>
-    <section id="portfolio">
+    <section id="about">
       <img
         src="./assets/arrow-up-white.png"
         alt=""
@@ -325,90 +380,39 @@
         class="icon arrow-up arrow-hover"
         onclick="location.href='#skills'"
       />
-      <p class="section__text__p1">Browse My</p>
-      <h1 class="title">Portfolio</h1>
-      <div class="skills-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/trading.png" alt="" class="project-img" onclick="location.href='trading.html'" />
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container about-pic-container main-about-pic">
+          <img src="assets/about-pic.png" alt="About" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/coder-logo.png" alt="" class="icon-large" />
+              <h3>Independent Software Developer</h3>
+              <h2>
+                2+ Years <br />
+                experience
+              </h2>
             </div>
-            <h2 class="skills-sub-title project-title">
-              Automated Trading Application
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='trading.html'"
-              >
-                See More
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://github.com/WilliamBHarrisJr/trade-raptor'"
-              >
-                Github
-              </button>
-            </div>
-            <div class="project-text-containers">
-              <h2>C#</h2>
-              <h2>WPF</h2>
+            <div class="details-container">
+              <img src="./assets/WGU-Seal.png" alt="" class="icon-large" />
+              <h3>Western Governors University</h3>
+              <h2>
+                Bachelor of Science <br />
+                Computer Science
+              </h2>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/weather.png" alt="" class="project-img" onclick="location.href='weather.html'" />
-            </div>
-            <h2 class="skills-sub-title project-title">
-              Weather Prediction Application
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='weather.html'"
-              >
-                See More
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://github.com/WilliamBHarrisJr/weather-prediction-application'"
-              >
-                Github
-              </button>
-            </div>
-            <div class="project-text-containers">
-              <h2>Python</h2>
-              <h2>Custom Tkinter</h2>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/appointment.png" alt="" class="project-img" onclick="location.href='appointment.html'" />
-            </div>
-            <h2 class="skills-sub-title project-title">
-              Appointment Scheduling Application
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='appointment.html'"
-              >
-                See More
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://github.com/WilliamBHarrisJr/appointment-scheduling-application'"
-              >
-                Github
-              </button>
-            </div>
-            <div class="project-text-containers">
-              <h2>Java</h2>
-              <h2>JavaFX</h2>
-              <h2>SQL</h2>
-            </div>
+          <div class="text-container">
+            <p class="about-text">
+              I'm an independent software developer with over two years of experience with various languages and frameworks. I enjoy both front-end and back-end development and learning new skills and technologies. Contact me if I would be an asset to your team!
+            </p>
+            <input class="expand-button" type="checkbox">
           </div>
         </div>
+        
       </div>
       <img
         src="./assets/arrow-white.png"
@@ -429,13 +433,13 @@
           src="./assets/arrow-up-white.png"
           alt=""
           class="icon arrow-up"
-          onclick="location.href='#portfolio'"
+          onclick="location.href='#about'"
         />
         <img
           src="./assets/arrow-up-blue.png"
           alt=""
           class="icon arrow-up arrow-hover"
-          onclick="location.href='#portfolio'"
+          onclick="location.href='#about'"
         />
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -472,9 +476,9 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#top-of-page">Profile</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
         </div>
       </nav>

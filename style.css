@@ -179,8 +179,8 @@ section {
   display: flex;
   height: 400px;
   width: 400px;
-  margin: auto 0;
-  flex-direction: row;
+
+  flex-direction: column;
 }
 
 .section__pic-container-relative {
@@ -198,6 +198,20 @@ section {
   display: flex;
   top: 0;
   left: 0;
+}
+
+#profile-pic-upper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: auto 0;
+}
+#profile-pic-upper-container p {
+  margin-top: 0.2rem;
+  font-size: 1.3rem;
+  font-family: "Yesteryear", cursive;
+  color: lightgray;
 }
 
 #profile-pic-1,
@@ -337,7 +351,7 @@ h2 {
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  width: 53%;
+  width: 45%;
   max-width: 45rem;
 }
 
@@ -382,6 +396,10 @@ h2 {
   max-width: 750px;
 }
 
+#portfolio .details-container {
+  max-width: 25rem;
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -394,6 +412,31 @@ h2 {
 .text-container {
   font-size: 1.3rem;
   width: 100%;
+}
+
+.expand-button {
+  display: none;
+  height: 0;
+  appearance: none;
+  transition: all 300ms ease;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: white;
+  border: lightgray 0.15rem solid;
+  background-color: rgb(34, 34, 34);
+  margin-top: 1rem;
+}
+
+.expand-button::before {
+  content: "Continue Reading";
+}
+
+.expand-button:checked::before {
+  content: "Collapse";
+}
+
+.about-text:has(+ .expand-button:checked) {
+  --max-lines: 25;
 }
 
 /* skills Section */
